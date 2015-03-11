@@ -1,0 +1,318 @@
+/* Universals */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #C4C4C4;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: #42dca3;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #1d9b6c;
+}
+
+.content-section {
+    min-height: 100%;
+    min-width: 600px;
+    padding-top: 100px;
+}
+
+.text-background {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 1);
+    padding: 0 1em;
+}
+
+.btn-circle, .btn-circle:focus {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover {
+    border: 2px solid #42dca3;
+    outline: 0;
+    color: #42dca3;
+}
+
+/* Nav */
+
+nav#primary {
+    display: none;
+    z-index: 5;
+    position: fixed;
+    top: 45%;
+    right: 16px;
+}
+
+@media(min-width:768px) {
+    nav#primary {
+        display: block;
+    }
+}
+
+nav#primary li {
+    position: relative;
+    height: 25px;
+    padding: 2px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+nav#primary a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 6px 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+nav#primary.invert a {
+    background-color: #000;
+}
+
+nav#primary a.active, nav#primary a.hover {
+    background-color: #C6525D;
+}
+
+nav#primary h6 {
+    position: absolute;
+    right: 12px;
+    display: none;
+    padding: 4px 20px 4px 7px;;
+    color: #C6525D;
+    white-space: nowrap;
+}
+
+/* Sections */
+/* Intro */
+
+#intro {
+    padding-top: 100px;
+}
+
+#intro h1, h2 {
+    margin: 10px 0;
+}
+
+#intro h6 {
+    margin-top: 130px;
+    font-style: italic;
+}
+
+#intro .btn-circle, #intro .btn-circle:focus {
+    margin-top: 195px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Portfolio */
+
+#portfolio {
+    color: #000;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.portfolio-wrapper {
+    margin-top: 30px;
+}
+
+.portfolio-title {
+    height: 32px;
+    margin: 20px 0 15px 0;
+    font-size: 16px;
+}
+
+.portfolio-item {
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #eee;
+    text-align: center;
+    cursor: default;
+}
+
+.portfolio-item .mask, .portfolio-item .content {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    position: relative;
+    transition: all 0.2s linear;
+}
+
+.portfolio-item .mask {
+    opacity: 0;
+    background-color: rgba(0 ,0, 0, 0.8);
+    transition: all 0.4s ease-in-out;
+}
+
+.portfolio-item h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    margin: 20px 20px 0 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio-item p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 0px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio-item a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    border: 1px solid #42dca3;
+    background: transparent;
+    color: #42dca3;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio-item a.info:hover {
+    color: #000;
+    background-color: #42dca3;
+}
+
+.portfolio-item:hover .mask {
+    opacity: 1;
+}
+
+.portfolio-item:hover h2, .portfolio-item:hover p, .portfolio-item:hover a.info {
+    opacity: 1;
+}
+
+.portfolio-item:hover p {
+    transition-delay: 0.1s;
+}
+
+.portfolio-item:hover a.info {
+    transition-delay: 0.1s;
+}
+
+#portfolio .btn-circle, #portfolio .btn-circle:focus {
+    color: #000;
+    border: 2px solid #000;
+    margin: 50px 0 30px 0;
+}
+
+#portfolio .btn-circle:hover {
+    border: 2px solid #42dca3;
+    color: #42dca3;
+}
+
+/* Connect */
+
+#connect h1 {
+    margin-bottom: 150px;
+}
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #42dca3;
+    color: #42dca3;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-default:hover {
+    border: 1px solid #42dca3;
+    outline: 0;
+    background-color: #42dca3;
+}
+
+ul.banner-social-buttons {
+    margin-top: 30px;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
