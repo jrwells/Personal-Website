@@ -50,16 +50,10 @@ a:hover {
 
 .content-section {
     min-height: 100%;
-    padding-top: 25px;
+    padding-top: 25%;
 }
 
-@media(min-height:370px) {
-    .content-section {
-        padding-top: 50px;
-    }
-}
-
-@media(min-height:550px) {
+@media(min-height:768px) {
     .content-section {
         padding-top: 100px;
     }
@@ -150,20 +144,8 @@ nav#primary h6 {
 }
 
 #intro .btn-circle, #intro .btn-circle:focus {
-    margin: 50px 0 25px 0;
+    margin: 24% 0 10% 0;
     background-color: rgba(0, 0, 0, 0.6);
-}
-
-@media(min-height:370px) {
-    #intro .btn-circle, #intro .btn-circle:focus {
-        margin: 100px 0 25px 0;
-    }
-}
-
-@media(min-height:550px) {
-    #intro .btn-circle, #intro .btn-circle:focus {
-        margin: 200px 0 50px 0;
-    }
 }
 
 /* Portfolio */
@@ -289,19 +271,7 @@ nav#primary h6 {
 /* Connect */
 
 #connect h1 {
-    margin-bottom: 50px;
-}
-
-@media(min-height:370px) {
-    #connect h1 {
-        margin-bottom: 75px;
-    }
-}
-
-@media(min-height:550px) {
-    #connect h1 {
-        margin-bottom: 150px;
-    }
+    margin-bottom: 20%;
 }
 
 .btn {
