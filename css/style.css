@@ -46,7 +46,19 @@ a:hover {
 
 .content-section {
     min-height: 100%;
-    padding-top: 100px;
+    padding-top: 25px;
+}
+
+@media(min-height:370px) {
+    .content-section {
+        padding-top: 50px;
+    }
+}
+
+@media(min-height:550px) {
+    .content-section {
+        padding-top: 100px;
+    }
 }
 
 .text-background {
@@ -129,22 +141,25 @@ nav#primary h6 {
 /* Sections */
 /* Intro */
 
-#intro {
-    padding-top: 100px;
-}
-
 #intro h1, h2 {
     margin: 6px 0;
 }
 
-#intro h6 {
-    margin-top: 130px;
-    font-style: italic;
+#intro .btn-circle, #intro .btn-circle:focus {
+    margin: 50px 0 25px 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-#intro .btn-circle, #intro .btn-circle:focus {
-    margin: 200px 0 50px 0;
-    background-color: rgba(0, 0, 0, 0.6);
+@media(min-height:370px) {
+    #intro .btn-circle, #intro .btn-circle:focus {
+        margin: 100px 0 25px 0;
+    }
+}
+
+@media(min-height:550px) {
+    #intro .btn-circle, #intro .btn-circle:focus {
+        margin: 200px 0 50px 0;
+    }
 }
 
 /* Portfolio */
@@ -270,7 +285,19 @@ nav#primary h6 {
 /* Connect */
 
 #connect h1 {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
+}
+
+@media(min-height:370px) {
+    #connect h1 {
+        margin-bottom: 75px;
+    }
+}
+
+@media(min-height:550px) {
+    #connect h1 {
+        margin-bottom: 150px;
+    }
 }
 
 .btn {
