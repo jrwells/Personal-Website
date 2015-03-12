@@ -10,7 +10,7 @@ $(function() {
         introBottom =  $('#intro').outerHeight() / 2;
         portfolioBottom =  $('#intro').outerHeight() + ($('#portfolio').outerHeight() / 2);
         pageBottom = $(document).height();
-        if (size[0] < 500 || size[1] < 500) {
+        if (size[0] < 600 || size[1] < 600) {
             window.resizeTo(size[0],size[1]);
         }
     });
