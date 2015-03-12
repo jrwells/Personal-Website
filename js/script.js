@@ -1,6 +1,7 @@
 var introBottom, portfolioBottom, pageBottom;
 
 $(function() {
+    $('body').scrollTop(1);
     introBottom =  $('#intro').outerHeight() / 2;
     portfolioBottom =  $('#intro').outerHeight() + ($('#portfolio').outerHeight() / 2);
     pageBottom = $(document).height();
