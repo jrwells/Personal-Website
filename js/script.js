@@ -1,4 +1,5 @@
 var introBottom, portfolioBottom, pageBottom;
+var size = [window.width, window.height];
 
 $(function() {
     introBottom =  $('#intro').outerHeight() / 2;
@@ -9,6 +10,9 @@ $(function() {
         introBottom =  $('#intro').outerHeight() / 2;
         portfolioBottom =  $('#intro').outerHeight() + ($('#portfolio').outerHeight() / 2);
         pageBottom = $(document).height();
+        if (size[0] < 500 || size[1] < 500) {
+            window.resizeTo(size[0],size[1]);
+        }
     });
 
     redrawNavigation();
