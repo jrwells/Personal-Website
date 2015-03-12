@@ -44,9 +44,9 @@ switch($code) {
 
 <!DOCTYPE html>
 <head>
-    <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="octicons/octicons.css">
     <title><?php echo(empty($error_title) ? $error_code : $error_title); ?></title>
 </head>
 <body>
