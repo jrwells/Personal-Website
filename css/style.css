@@ -283,7 +283,7 @@ nav#primary h6 {
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
+.btn-default, .btn-default:active, .btn-default:focus {
     border: 1px solid #42dca3;
     color: #42dca3;
     background-color: rgba(0, 0, 0, 0.6);
