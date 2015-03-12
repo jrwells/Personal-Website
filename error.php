@@ -50,6 +50,9 @@ switch($code) {
     <title><?php echo(empty($error_title) ? $error_code : $error_title); ?></title>
 </head>
 <body>
+    <style>
+        #error { background-color: #000; }
+    </style>
     <section id="error" class="content-section text-center">
         <div id="content">
             <div id="row">
