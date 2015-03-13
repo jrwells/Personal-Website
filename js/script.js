@@ -17,6 +17,10 @@ $(function() {
         redrawNavigation();
     });
 
+    $(".portfolio-item").on("touchstart", function(e) {
+        $(this).trigger("hover");
+    });
+
     $('nav#primary li').hover(
         function () {
             $(this).children('h6').eq(0).fadeIn();
