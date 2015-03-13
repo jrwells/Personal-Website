@@ -46,13 +46,7 @@ a:hover {
 
 .content-section {
     min-height: 100%;
-    padding-top: 25%;
-}
-
-@media(min-height:768px) {
-    .content-section {
-        padding-top: 100px;
-    }
+    padding-top: 100px;
 }
 
 .text-background {
