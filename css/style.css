@@ -139,12 +139,6 @@ nav#primary h6 {
 /* Sections */
 /* Intro */
 
-#intro {
-    display: table;
-    width: 100%;
-    height: auto;
-}
-
 #intro h1, h2 {
     margin: 6px 0;
 }
